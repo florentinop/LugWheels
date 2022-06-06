@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/client_home.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.2555" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2555" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/layout/activity_clienthome.xml" value="0.25" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/layout/tuturial1.xml" value="0.264" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/layout/tuturial2.xml" value="0.25" />
+        <entry key="..\:/Users/35191/Desktop/AS/app/LugWheels/app/src/main/res/layout/tuturial3.xml" value="0.264" />
       </map>
     </option>
   </component>
