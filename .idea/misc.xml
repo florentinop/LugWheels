@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/AS/Project/LugWheels/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1675" />
+        <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/AS/Project/LugWheels/app/src/main/res/layout/activity_additem.xml" value="0.17291666666666666" />
+        <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/AS/Project/LugWheels/app/src/main/res/layout/activity_novopedido.xml" value="0.2" />
+        <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/AS/Project/LugWheels/app/src/main/res/layout/activity_seguirpedido.xml" value="0.2" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/client_home.xml" value="0.20521590423257802" />
       </map>
     </option>
