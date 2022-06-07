@@ -40,6 +40,16 @@
         android:name=".RotaActivity"
         android:label="Rota" />
 
+    <activity
+        android:name=".PedidoActivity"
+        android:label="Rota" />
+    <activity
+        android:name=".AddItemActivity"
+        android:label="Rota" />
+    <activity
+        android:name=".SeguimentoActivity"
+        android:label="Rota" />
+
     </application>
 
 </manifest>
