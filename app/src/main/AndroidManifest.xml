@@ -24,7 +24,9 @@
         </intent-filter>
     </activity>
 
-
+    <activity
+        android:name=".RotaActivity"
+        android:label="Rota" />
 
     </application>
 
