@@ -1,7 +1,9 @@
 package com.example.lugwheels;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +20,13 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityClienthomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        View avancar = findViewById(R.id.avancar);
+        avancar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),  RotaActivity.class));
+            }
+        });
 
     }
 

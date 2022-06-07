@@ -16,10 +16,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-    </LinearLayout>
+        android:orientation="vertical"></LinearLayout>
 
     <ImageButton
         android:id="@+id/menu"
@@ -51,77 +51,34 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:src="@drawable/mapa"
-        app:layout_constraintTop_toBottomOf="@+id/topBar"
-         />
+        android:layout_height="500dp"
+        android:src="@drawable/rota"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
 
     <LinearLayout
-        android:id="@+id/recolha"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center_horizontal"
+        android:layout_height="100dp"
+        android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-        <TextView
-            android:id="@+id/recolha_label"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/alterar"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Ponto de Recolha: "
-            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:text="Alterar trajeto"
             android:layout_marginRight="10dp"
+            android:textColor="@color/white" />
 
-            android:textColor="@color/black" />
-
-        <EditText
-            android:id="@+id/recolha_text"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/confirmar"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="20dp"
-            android:inputType="textPersonName"
-            android:textColor="@color/black" />
+            android:backgroundTint="@color/green"
+            android:text="Confirmar"
+            android:textColor="@color/white" />
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/entrega"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/recolha">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ponto de Entrega: "
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-
-            android:textColor="@color/black" />
-
-        <EditText
-            android:id="@+id/de"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="20dp"
-            android:inputType="textPersonName"
-            android:textColor="@color/black" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/avancar"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Avançar"
-        android:backgroundTint="@color/green"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrega" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
