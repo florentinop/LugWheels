@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.193" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/drawable/side_nav_bar.xml" value="0.193" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_additem.xml" value="0.25" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_client_home.xml" value="0.21052631578947367" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_clienthome.xml" value="0.21052631578947367" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_novopedido.xml" value="0.25" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_rota.xml" value="0.25" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/activity_seguirpedido.xml" value="0.25" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/app_bar_client_home.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/content_client_home.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_definicoes.xml" value="0.14385964912280702" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_gallery.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_home.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_novopedido.xml" value="0.14385964912280702" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_seguimento.xml" value="0.14385964912280702" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/fragment_slideshow.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/layout/nav_header_client_home.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/menu/activity_main_drawer.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/LugWheels/app/src/main/res/menu/client_home.xml" value="0.21052631578947367" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/LugWheels/app/src/main/res/layout/activity_additem.xml" value="0.21052631578947367" />
       </map>
     </option>

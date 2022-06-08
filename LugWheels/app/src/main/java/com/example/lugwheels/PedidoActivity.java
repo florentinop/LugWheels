@@ -6,7 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.lugwheels.databinding.ActivityClienthomeBinding;
 import com.example.lugwheels.databinding.ActivityNovopedidoBinding;
 
 public class PedidoActivity extends AppCompatActivity {
@@ -31,7 +30,9 @@ public class PedidoActivity extends AppCompatActivity {
         avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  SeguimentoActivity.class));
+                Intent intent = new Intent(getApplicationContext(), ClientHomeActivity.class);
+                intent.putExtra("who","PedidoActivity");
+                startActivity(intent);
             }
         });
 

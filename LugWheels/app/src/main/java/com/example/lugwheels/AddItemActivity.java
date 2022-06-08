@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lugwheels.databinding.ActivityAdditemBinding;
-import com.example.lugwheels.databinding.ActivityClienthomeBinding;
 import com.example.lugwheels.databinding.ActivityNovopedidoBinding;
 
 public class AddItemActivity extends AppCompatActivity {

@@ -3,51 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.seguimento.SeguimentoFragment">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/backB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="?attr/selectableItemBackground"
-        android:padding="8dp"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:letterSpacing="0.025"
-        android:text="Seguir Pedido"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/backB"
-        app:layout_constraintTop_toTopOf="parent" />
-
-  <!--  <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        android:focusable="false"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="71dp" />-->
+    <!--  <View
+          android:layout_width="fill_parent"
+          android:layout_height="2dp"
+          android:background="@color/gray"
+          android:focusable="false"
+          tools:layout_editor_absoluteX="0dp"
+          tools:layout_editor_absoluteY="71dp" />-->
 
     <LinearLayout
         android:layout_width="match_parent"

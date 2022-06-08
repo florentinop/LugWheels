@@ -32,7 +32,7 @@ public class TuturialActivity2 extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(),  ClientHomeActivity.class));
             }
         });
 
@@ -40,7 +40,7 @@ public class TuturialActivity2 extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(),  ClientHomeActivity.class));
             }
         });
 
