@@ -37,6 +37,14 @@ public class RotaActivity extends AppCompatActivity {
             }
         });
 
+        View back = findViewById(R.id.backB);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
     }
 
