@@ -43,8 +43,8 @@
             android:name=".AddItemActivity"
             android:label="Rota" />
         <activity
-            android:name=".SeguimentoActivity"
-            android:label="Rota" />
+            android:name=".CondutorClienteActivity"
+            android:label="C O" />
     </application>
 
 </manifest>

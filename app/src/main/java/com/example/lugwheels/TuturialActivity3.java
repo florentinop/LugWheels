@@ -23,7 +23,7 @@ public class TuturialActivity3 extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  ClientHomeActivity.class));
+                startActivity(new Intent(getApplicationContext(),  CondutorClienteActivity.class));
             }
         });
 
@@ -31,7 +31,7 @@ public class TuturialActivity3 extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  ClientHomeActivity.class));
+                startActivity(new Intent(getApplicationContext(),  CondutorClienteActivity.class));
             }
         });
 

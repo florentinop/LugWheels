@@ -42,6 +42,7 @@
                 android:layout_alignParentRight="true"
                 android:background="@color/white"
                 android:scaleType="fitXY"
+                app:tint="@color/green"
                 android:src="@drawable/seta"
                 />
 
