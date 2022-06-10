@@ -53,7 +53,6 @@ public class SignupActivity extends AppCompatActivity {
                 if(match) {
                     for (int i = 0; i < users_info.length; i++) {
                         String[] cred = users_info[i].split(",");
-                        System.out.println(cred[0]);
                         String email = cred[0];
                         if (email.equals(typed_email.getText().toString())) {
                             exists = true;

@@ -4,36 +4,38 @@ package com.example.lugwheels;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.lugwheels.databinding.ActivityPedidoRotaBinding;
 import com.example.lugwheels.databinding.ActivityRotaBinding;
-import com.example.lugwheels.databinding.CondutorClienteBinding;
 
 
-public class CondutorClienteActivity extends AppCompatActivity {
-    private CondutorClienteBinding binding;
+public class PedidoRotaActivity extends AppCompatActivity {
+    private ActivityPedidoRotaBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = CondutorClienteBinding.inflate(getLayoutInflater());
+        binding = ActivityPedidoRotaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        View cliente = findViewById(R.id.Cliente);
-        cliente.setOnClickListener(new View.OnClickListener() {
+        View recolha = findViewById(R.id.recolha);
+        recolha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  ClientHomeActivity.class));
+                LinearLayout buttons = findViewById(R.id.buttons);
+                buttons.removeView(findViewById(R.id.recolha));
             }
         });
 
-        View condutor = findViewById(R.id.Condutor);
-        condutor.setOnClickListener(new View.OnClickListener() {
+        View entrega = findViewById(R.id.entrega);
+        entrega.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  DriverHomeActivity.class));
+                finish();
             }
         });
 

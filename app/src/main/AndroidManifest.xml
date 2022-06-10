@@ -51,6 +51,12 @@
         <activity
             android:name=".LoginActivity"
             android:label="C O" />
+        <activity
+            android:name=".DriverHomeActivity"
+            android:label="C O" />
+        <activity
+            android:name=".PedidoRotaActivity"
+            android:label="C O" />
     </application>
 
 </manifest>
