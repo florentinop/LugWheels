@@ -41,24 +41,31 @@ public class LoginActivity extends AppCompatActivity {
                 EditText typed_password = findViewById(R.id.typed_password);
 
                 String users = readFromFile("users.txt");
-                String users_info [] = users.split(";");
+                String users_info[] = users.split(";");
 
                 boolean auth = false;
+                boolean empty = false;
 
-                for (int i =0;i<users_info.length;i++) {
-                    String [] cred = users_info[i].split(",");
-                    System.out.println(cred[0]);
-                    String email = cred[0];
-                    String pass = cred[1];
-                    if (email.equals(typed_email.getText().toString()) && pass.equals(typed_password.getText().toString())) {
-                        auth = true;
-                        startActivity(new Intent(getApplicationContext(),  CondutorClienteActivity.class));
-                        break;
+                if (typed_password.getText().toString().equals("") || typed_email.getText().toString().equals(""))
+                    empty = true;
+                if (!empty) {
+                    for (int i = 0; i < users_info.length; i++) {
+                        String[] cred = users_info[i].split(",");
+                        System.out.println(cred[0]);
+                        String email = cred[0];
+                        String pass = cred[1];
+                        if (email.equals(typed_email.getText().toString()) && pass.equals(typed_password.getText().toString())) {
+                            auth = true;
+                            startActivity(new Intent(getApplicationContext(), CondutorClienteActivity.class));
+                            break;
+                        }
                     }
+                    if (!auth)
+                        Toast.makeText(getApplicationContext(), "Email ou password inválidos", Toast.LENGTH_LONG).show();
                 }
+                else
+                    Toast.makeText(getApplicationContext(), "Campos Vazios!", Toast.LENGTH_LONG).show();
 
-                if(!auth)
-                    Toast.makeText(getApplicationContext(), "Email ou password inválidos", Toast.LENGTH_LONG).show();
             }
         });
 

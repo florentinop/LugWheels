@@ -61,8 +61,8 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:layout_height="460dp"
-            android:text="TimeLine"
+            android:layout_height="400dp"
+            android:text="Estafeta: Juliana Justina"
             android:textSize="40dp"/>
 
         <Switch
@@ -72,6 +72,14 @@
             android:layout_gravity="center"
             android:textSize="22dp"
             android:text="Notificar atualizações" />
+
+        <Button
+            android:id="@+id/avaliar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Avaliar Estafeta" />
 
         <Button
             android:id="@+id/voltar"

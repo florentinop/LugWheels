@@ -47,7 +47,10 @@ public class SignupActivity extends AppCompatActivity {
                 boolean exists = false;
                 boolean match = false;
 
-                if(typed_password.getText().toString().equals(typed_password2.getText().toString()))
+                if(typed_password.getText().toString().equals(typed_password2.getText().toString())
+                        && !typed_password.getText().toString().equals("")
+                        && !typed_password2.getText().toString().equals("")
+                        && !typed_email.getText().toString().equals(""))
                     match=true;
 
                 if(match) {

@@ -53,6 +53,9 @@
                 <ImageButton
                     android:id="@+id/Cliente"
                     android:layout_width="234dp"
+                    android:clickable="true"
+                    android:elevation="12dp"
+                    android:focusable="true"
                     android:layout_height="match_parent"
                     android:background="@color/green"
                     android:padding="25dp"
@@ -94,6 +97,9 @@
                     android:layout_width="234dp"
                     android:layout_height="match_parent"
                     android:background="@color/green"
+                    android:clickable="true"
+                    android:elevation="12dp"
+                    android:focusable="true"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_baseline_drive_eta_24"
                     app:tint="@color/white" />

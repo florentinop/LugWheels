@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.lugwheels.AvaliarActivity;
 import com.example.lugwheels.ClientHomeActivity;
 import com.example.lugwheels.R;
 import com.example.lugwheels.databinding.FragmentSeguimentoBinding;
@@ -34,6 +35,15 @@ public class SeguimentoFragment extends Fragment {
                 startActivity(new Intent(getContext(),  ClientHomeActivity.class));
             }
         });
+
+        View avaliar = binding.avaliar;
+        avaliar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), AvaliarActivity.class));
+            }
+        });
+
         return root;
     }
 
