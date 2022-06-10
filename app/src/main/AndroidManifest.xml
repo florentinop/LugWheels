@@ -45,6 +45,12 @@
         <activity
             android:name=".CondutorClienteActivity"
             android:label="C O" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="C O" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="C O" />
     </application>
 
 </manifest>
