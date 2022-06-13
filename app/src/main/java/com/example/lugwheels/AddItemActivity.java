@@ -31,7 +31,7 @@ public class AddItemActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),  PedidoActivity.class));
+                startActivity(new Intent(getApplicationContext(), PedidoActivity.class));
             }
         });
 

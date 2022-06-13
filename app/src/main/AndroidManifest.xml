@@ -60,6 +60,13 @@
         <activity
             android:name=".AvaliarActivity"
             android:label="C O" />
+
+        <activity
+            android:name=".PagamentoActivity"
+            android:label="C O" />
+        <activity
+            android:name=".PagamentoEfetuado"
+            android:label="C O" />
     </application>
 
 </manifest>

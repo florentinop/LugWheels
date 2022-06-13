@@ -26,11 +26,21 @@ public class PedidoActivity extends AppCompatActivity {
             }
         });
 
-        View avancar = findViewById(R.id.avancar);
+        /*View avancar = findViewById(R.id.avancar);
         avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ClientHomeActivity.class);
+                intent.putExtra("who","PedidoActivity");
+                startActivity(intent);
+            }
+        });*/
+
+        View avancar = findViewById(R.id.avancar);
+        avancar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), com.example.lugwheels.PagamentoActivity.class);
                 intent.putExtra("who","PedidoActivity");
                 startActivity(intent);
             }
