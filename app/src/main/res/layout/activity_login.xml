@@ -8,11 +8,19 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="150dp"
         android:background="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:background="@drawable/ic_wave"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/view"/>
 
     <ImageButton
         android:id="@+id/backB"
@@ -38,102 +46,104 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-  <!--  <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        android:focusable="false"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="71dp" />-->
-
-    <ScrollView
+<!--    <ScrollView
         android:id="@+id/scroll_feed"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="320dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:scrollbars="none"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="70dp">
+        tools:layout_editor_absoluteY="70dp">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="350dp"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:orientation="vertical">
+            android:id="@+id/nome"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="80dp"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-            <LinearLayout
-                android:id="@+id/nome"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/imageView">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Email:  "
 
-                <TextView
-                    android:id="@+id/email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Email:  "
+                android:textColor="@color/black" />
 
-                    android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/typed_email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+        </LinearLayout>
 
-                <EditText
-                    android:id="@+id/typed_email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/item1"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-            <LinearLayout
-                android:id="@+id/item1"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/imageView">
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Password: "
 
-                <TextView
-                    android:id="@+id/password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Password: "
+                android:textColor="@color/black" />
 
-                    android:textColor="@color/black" />
-
-                <EditText
-                    android:id="@+id/typed_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
+            <EditText
+                android:id="@+id/typed_password"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:gravity="right"
+            android:text="FORGOT PASSWORD?"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
 
-    </ScrollView>
 
-<!--    <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="@color/gray"
-            android:focusable="false"/>-->
+    </LinearLayout>
+
+
+<!--    </ScrollView>-->
 
     <View
         android:layout_width="fill_parent"
         android:layout_height="2dp"
         android:layout_marginTop="600dp"
         android:background="@color/gray"
-        android:focusable="false"/>
+        android:focusable="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -146,8 +156,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="Entrar" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="OR"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/google" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/gray"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Novo utilizador? Criar conta"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
 
