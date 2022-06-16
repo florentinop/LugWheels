@@ -67,6 +67,7 @@
         tools:layout_editor_absoluteY="70dp">
 
         <LinearLayout
+            android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:orientation="vertical">
@@ -76,8 +77,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
                 android:clickable="true"
                 android:elevation="12dp"
                 android:focusable="true"
@@ -105,7 +106,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView1"
+                            android:id="@+id/peso1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -113,7 +114,7 @@
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/tamanho1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -121,12 +122,14 @@
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/nome1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Mala 1"
-                            android:textSize="20dp" />
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -137,16 +140,19 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/back2"
+                            android:id="@+id/edit1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
                             android:background="@color/white"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="8dp"
-                            android:src="@drawable/ic_baseline_edit_24"/>
+                            android:src="@drawable/ic_baseline_edit_24" />
 
                         <ImageButton
-                            android:id="@+id/back"
+                            android:id="@+id/delete1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
@@ -196,28 +202,30 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/peso2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="29 Kg."
+                            android:text="85 Kg."
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/tamanho2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="120x30x60 cm"
+                            android:text="20x30x42 cm"
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/nome2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Mala 1"
-                            android:textSize="20dp" />
+                            android:text="Mala 2"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -233,11 +241,210 @@
                             android:layout_height="30dp"
                             android:layout_gravity="center"
                             android:background="@color/white"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="8dp"
-                            android:src="@drawable/ic_baseline_edit_24"/>
+                            android:src="@drawable/ic_baseline_edit_24" />
 
                         <ImageButton
                             android:id="@+id/delete2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_delete_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/PostCard3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:elevation="12dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@drawable/mala2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="55"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/peso3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="5 Kg."
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/tamanho3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="5x3x6 cm"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/nome3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Mala 3"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/edit3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_edit_24" />
+
+                        <ImageButton
+                            android:id="@+id/delete3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_delete_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/PostCard4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:elevation="12dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@drawable/mala2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="55"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/peso4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/tamanho4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/nome4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/edit4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_edit_24" />
+
+                        <ImageButton
+                            android:id="@+id/delete4"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
