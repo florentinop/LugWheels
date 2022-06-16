@@ -3,6 +3,7 @@ package com.example.lugwheels;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,7 +32,12 @@ public class AddItemActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PedidoActivity.class));
+                EditText nome = findViewById(R.id.nome2);
+                EditText peso = findViewById(R.id.peso2);
+                EditText tamanho = findViewById(R.id.tamanho2);
+                Intent intent = new Intent(getApplicationContext(), PedidoActivity.class);
+                intent.putExtra("PARAMS4",nome.getText().toString()+","+peso.getText().toString()+","+tamanho.getText().toString());
+                startActivity(intent);
             }
         });
 

@@ -14,6 +14,7 @@ import com.example.lugwheels.databinding.ActivityRotaBinding;
 
 public class PedidoRotaActivity extends AppCompatActivity {
     private ActivityPedidoRotaBinding binding;
+    private int p=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +34,6 @@ public class PedidoRotaActivity extends AppCompatActivity {
 
         View entrega = findViewById(R.id.entrega);
         entrega.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        View back = findViewById(R.id.backB);
-        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

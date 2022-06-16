@@ -33,7 +33,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="12dp"
         android:letterSpacing="0.025"
-        android:text="Adicionar item"
+        android:text="Editar item"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -81,7 +81,6 @@
 
                 <EditText
                     android:id="@+id/nome2"
-                    android:hint="Mala 1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -112,7 +111,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="56 kg"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:textColor="@color/black" />
@@ -138,11 +136,10 @@
 
                 <EditText
                     android:id="@+id/tamanho2"
-                    android:layout_width="251dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:ems="10"
-                    android:hint="Altura,Largura,Comprimento"
                     android:inputType="textPersonName"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -178,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Adicionar item" />
+            android:text="Editar item" />
 
     </LinearLayout>
 

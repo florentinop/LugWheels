@@ -64,11 +64,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:text="Pedidos Disponíveis"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:text="Pedidos Disponíveis"
-                />
+                android:textSize="25dp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/PostCard1"
@@ -144,12 +143,12 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackground"
                             android:clickable="true"
                             android:elevation="12dp"
                             android:focusable="true"
-                            android:background="?attr/selectableItemBackground"
                             android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
                             android:src="@drawable/ic_baseline_check_circle_24"
                             app:tint="@color/green_confirm" />
 
@@ -160,11 +159,11 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="7dp"
                             android:background="?attr/selectableItemBackground"
-                            android:padding="8dp"
                             android:clickable="true"
                             android:elevation="12dp"
                             android:focusable="true"
                             android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
                             android:src="@drawable/ic_baseline_cancel_24"
 
                             app:tint="@color/red" />
@@ -248,12 +247,12 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:padding="8dp"
                             android:background="?attr/selectableItemBackground"
                             android:clickable="true"
                             android:elevation="12dp"
                             android:focusable="true"
                             android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
                             android:src="@drawable/ic_baseline_check_circle_24"
                             app:tint="@color/green_confirm" />
 
@@ -264,11 +263,117 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="7dp"
                             android:background="?attr/selectableItemBackground"
-                            android:padding="8dp"
                             android:clickable="true"
                             android:elevation="12dp"
                             android:focusable="true"
                             android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_cancel_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/red" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/PostCard3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:elevation="12dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@drawable/mala2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="55"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pedido3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Pedido 12"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Jim Jam"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/porte3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Porte Normal"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/confirm3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_check_circle_24"
+                            app:tint="@color/green_confirm" />
+
+                        <ImageButton
+                            android:id="@+id/deny3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="8dp"
                             android:src="@drawable/ic_baseline_cancel_24"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
