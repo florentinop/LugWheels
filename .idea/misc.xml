@@ -19,6 +19,7 @@
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_client_home.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_clienthome.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_driver_home.xml" value="0.176" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_edicao_impossivel.xml" value="0.1442982456140351" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_edit_item.xml" value="0.21052631578947367" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_login.xml" value="0.15520833333333334" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/activity_novopedido.xml" value="0.25" />
@@ -38,7 +39,7 @@
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/fragment_definicoes.xml" value="0.25" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/fragment_denunciar.xml" value="0.13859649122807016" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/fragment_novopedido.xml" value="0.25" />
-        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/fragment_seguimento.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/fragment_seguimento.xml" value="0.152" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/layout/nav_header_client_home.xml" value="0.25" />
         <entry key="..\:/Users/flore/OneDrive/Desktop/AS/LugWheels/app/src/main/res/menu/activity_main_drawer.xml" value="0.264" />
       </map>

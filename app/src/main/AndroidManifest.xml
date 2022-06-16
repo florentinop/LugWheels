@@ -70,6 +70,9 @@
         <activity
             android:name=".EditItemActivity"
             android:label="C O" />
+        <activity
+            android:name=".EdicaoImpossivel"
+            android:label="C O" />
     </application>
 
 </manifest>
