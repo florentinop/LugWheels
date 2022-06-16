@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.denunciar.DenunciarFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_report_problem_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:paddingLeft="50dp"
+            android:text="  +351 85745522"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:paddingLeft="30dp"
+            android:text="  lugwheels@lg.com"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Explique-nos a sua situação"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escreva aqui..."
+            >
+
+        </EditText>
+
+
+
+
+
+        <Button
+            android:id="@+id/submeter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Submeter"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+    <!--    </ScrollView>-->
+
+</RelativeLayout>

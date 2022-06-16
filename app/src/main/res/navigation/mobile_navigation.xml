@@ -22,4 +22,9 @@
         android:name="com.example.lugwheels.ui.definicoes.SlideshowFragment"
         android:label="Definições"
         tools:layout="@layout/fragment_definicoes" />
+    <fragment
+        android:id="@+id/nav_denunciar"
+        android:name="com.example.lugwheels.ui.denunciar.DenunciarFragment"
+        android:label="Denunciar Problema"
+        tools:layout="@layout/fragment_denunciar" />
 </navigation>
