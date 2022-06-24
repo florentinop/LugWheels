@@ -13,6 +13,11 @@ import com.example.lugwheels.databinding.ActivityNovopedidoBinding;
 
 public class PedidoActivity extends AppCompatActivity {
     private ActivityNovopedidoBinding binding;
+    protected static boolean pc1=false,pc2=false,pc3=false,pc4=false;
+    protected static String params1 [];
+    protected static String params2 [];
+    protected static String params3 [];
+    protected static String params4 [];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,22 @@ public class PedidoActivity extends AppCompatActivity {
 
         binding = ActivityNovopedidoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        TextView nome1 = findViewById(R.id.nome1);
+        TextView peso1 = findViewById(R.id.peso1);
+        TextView tamanho1 = findViewById(R.id.tamanho1);
+
+        TextView nome2 = findViewById(R.id.nome2);
+        TextView peso2 = findViewById(R.id.peso2);
+        TextView tamanho2 = findViewById(R.id.tamanho2);
+
+        TextView nome3 = findViewById(R.id.nome3);
+        TextView peso3 = findViewById(R.id.peso3);
+        TextView tamanho3 = findViewById(R.id.tamanho3);
+
+        TextView nome4 = findViewById(R.id.nome4);
+        TextView peso4 = findViewById(R.id.peso4);
+        TextView tamanho4 = findViewById(R.id.tamanho4);
 
         View back = findViewById(R.id.backB);
         back.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +73,7 @@ public class PedidoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EditItemActivity.class);
-                intent.putExtra("PARAMS1","Mala 1,29 Kg.,120x30x60 cm");
+                intent.putExtra("PARAMS1",nome1.getText()+","+peso1.getText()+","+tamanho1.getText());
                 startActivity(intent);
             }
         });
@@ -62,7 +83,7 @@ public class PedidoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EditItemActivity.class);
-                intent.putExtra("PARAMS2","Mala 2,85 Kg.,20x30x42 cm");
+                intent.putExtra("PARAMS2",nome2.getText()+","+peso2.getText()+","+tamanho2.getText());
                 startActivity(intent);
             }
         });
@@ -72,7 +93,7 @@ public class PedidoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EditItemActivity.class);
-                intent.putExtra("PARAMS3","Mala 3,5 Kg.,5x3x6 cm");
+                intent.putExtra("PARAMS3",nome3.getText()+","+peso3.getText()+","+tamanho3.getText());
                 startActivity(intent);
             }
         });
@@ -82,51 +103,81 @@ public class PedidoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EditItemActivity.class);
-                intent.putExtra("PARAMS4","Mala 3,5 Kg.,5x3x6 cm");
+                intent.putExtra("PARAMS4",nome4.getText()+","+peso4.getText()+","+tamanho4.getText());
                 startActivity(intent);
             }
         });
 
         Intent intent = getIntent();
-        System.out.println(intent.getStringExtra("PARAMS1"));
+
+
+
         if(intent.hasExtra("PARAMS1")) {
-            String params [] = intent.getStringExtra("PARAMS1").split(",");
-            TextView nome = findViewById(R.id.nome1);
-            nome.setText(params[0]);
-            TextView peso = findViewById(R.id.peso1);
-            peso.setText(params[1]);
-            TextView tamanho = findViewById(R.id.tamanho1);
-            tamanho.setText(params[2]);
+            View p1 = findViewById(R.id.PostCard1);
+            p1.setVisibility(View.VISIBLE);
+            params1 = intent.getStringExtra("PARAMS1").split(",");
+            nome1.setText(params1[0]);
+            peso1.setText(params1[1]);
+            tamanho1.setText(params1[2]);
         }
+
         if(intent.hasExtra("PARAMS2")) {
-            String params [] = intent.getStringExtra("PARAMS2").split(",");
-            TextView nome = findViewById(R.id.nome2);
-            nome.setText(params[0]);
-            TextView peso = findViewById(R.id.peso2);
-            peso.setText(params[1]);
-            TextView tamanho = findViewById(R.id.tamanho2);
-            tamanho.setText(params[2]);
+            View p2 = findViewById(R.id.PostCard2);
+            p2.setVisibility(View.VISIBLE);
+            params2 = intent.getStringExtra("PARAMS2").split(",");
+            nome2.setText(params2[0]);
+            peso2.setText(params2[1]);
+            tamanho2.setText(params2[2]);
         }
+
         if(intent.hasExtra("PARAMS3")) {
-            String params [] = intent.getStringExtra("PARAMS3").split(",");
-            TextView nome = findViewById(R.id.nome3);
-            nome.setText(params[0]);
-            TextView peso = findViewById(R.id.peso3);
-            peso.setText(params[1]);
-            TextView tamanho = findViewById(R.id.tamanho3);
-            tamanho.setText(params[2]);
+            View p3 = findViewById(R.id.PostCard3);
+            p3.setVisibility(View.VISIBLE);
+            params3 = intent.getStringExtra("PARAMS3").split(",");
+            nome3.setText(params3[0]);
+            peso3.setText(params3[1]);
+            tamanho3.setText(params3[2]);
         }
 
         if(intent.hasExtra("PARAMS4")) {
             View p4 = findViewById(R.id.PostCard4);
             p4.setVisibility(View.VISIBLE);
-            String params [] = intent.getStringExtra("PARAMS4").split(",");
-            TextView nome = findViewById(R.id.nome4);
-            nome.setText(params[0]);
-            TextView peso = findViewById(R.id.peso4);
-            peso.setText(params[1]);
-            TextView tamanho = findViewById(R.id.tamanho4);
-            tamanho.setText(params[2]);
+            params4 = intent.getStringExtra("PARAMS4").split(",");
+            nome4.setText(params4[0]);
+            peso4.setText(params4[1]);
+            tamanho4.setText(params4[2]);
+        }
+
+        if(pc1){
+            View p1 = findViewById(R.id.PostCard1);
+            p1.setVisibility(View.VISIBLE);
+            nome1.setText(params1[0]);
+            peso1.setText(params1[1]);
+            tamanho1.setText(params1[2]);
+        }
+
+        if (pc2){
+            View p2 = findViewById(R.id.PostCard2);
+            p2.setVisibility(View.VISIBLE);
+            nome2.setText(params2[0]);
+            peso2.setText(params2[1]);
+            tamanho2.setText(params2[2]);
+        }
+
+        if (pc3){
+            View p3 = findViewById(R.id.PostCard3);
+            p3.setVisibility(View.VISIBLE);
+            nome3.setText(params3[0]);
+            peso3.setText(params3[1]);
+            tamanho3.setText(params3[2]);
+        }
+
+        if (pc4){
+            View p4 = findViewById(R.id.PostCard4);
+            p4.setVisibility(View.VISIBLE);
+            nome4.setText(params4[0]);
+            peso4.setText(params4[1]);
+            tamanho4.setText(params4[2]);
         }
 
         View delete1 = findViewById(R.id.delete1);
@@ -135,6 +186,7 @@ public class PedidoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 LinearLayout ly = findViewById(R.id.list);
                 ly.removeView(findViewById(R.id.PostCard1));
+                pc1=false;
             }
         });
 
@@ -144,6 +196,7 @@ public class PedidoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 LinearLayout ly = findViewById(R.id.list);
                 ly.removeView(findViewById(R.id.PostCard2));
+                pc2=false;
             }
         });
 
@@ -153,6 +206,7 @@ public class PedidoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 LinearLayout ly = findViewById(R.id.list);
                 ly.removeView(findViewById(R.id.PostCard3));
+                pc3=false;
             }
         });
 
@@ -162,6 +216,7 @@ public class PedidoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 LinearLayout ly = findViewById(R.id.list);
                 ly.removeView(findViewById(R.id.PostCard4));
+                pc4=false;
             }
         });
 

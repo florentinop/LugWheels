@@ -40,7 +40,10 @@ public class LoginActivity extends AppCompatActivity {
                 EditText typed_email = findViewById(R.id.typed_email);
                 EditText typed_password = findViewById(R.id.typed_password);
 
+
                 String users = readFromFile("users.txt");
+
+                System.out.println("ola      "+users);
                 String users_info[] = users.split(";");
 
                 boolean auth = false;
@@ -48,10 +51,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (typed_password.getText().toString().equals("") || typed_email.getText().toString().equals(""))
                     empty = true;
-                if (!empty) {
+                if (!empty ) {
                     for (int i = 0; i < users_info.length; i++) {
                         String[] cred = users_info[i].split(",");
-                        System.out.println(cred[0]);
+                        if (cred.length==1)break;
                         String email = cred[0];
                         String pass = cred[1];
                         if (email.equals(typed_email.getText().toString()) && pass.equals(typed_password.getText().toString())) {
@@ -78,17 +81,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    private void writeToFile(String data) {
-        try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("users.txt", Context.MODE_APPEND));
-            outputStreamWriter.write(data);
-            outputStreamWriter.close();
-        }
-        catch (IOException e) {
-            Log.e("Exception", "File write failed: " + e.toString());
-        }
     }
 
     public String readFromFile(String file) {

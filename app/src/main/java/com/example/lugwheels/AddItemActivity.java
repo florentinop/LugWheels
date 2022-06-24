@@ -12,6 +12,7 @@ import com.example.lugwheels.databinding.ActivityNovopedidoBinding;
 
 public class AddItemActivity extends AppCompatActivity {
     private ActivityAdditemBinding binding;
+    protected static int mala = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,17 @@ public class AddItemActivity extends AppCompatActivity {
                 EditText peso = findViewById(R.id.peso2);
                 EditText tamanho = findViewById(R.id.tamanho2);
                 Intent intent = new Intent(getApplicationContext(), PedidoActivity.class);
-                intent.putExtra("PARAMS4",nome.getText().toString()+","+peso.getText().toString()+","+tamanho.getText().toString());
+                intent.putExtra("PARAMS"+mala,nome.getText().toString()+","+peso.getText().toString()+","+tamanho.getText().toString());
+                if(mala==1)
+                    PedidoActivity.pc1=true;
+                if(mala==2)
+                    PedidoActivity.pc2=true;
+                if(mala==3)
+                    PedidoActivity.pc3=true;
+                if(mala==4)
+                    PedidoActivity.pc4=true;
                 startActivity(intent);
+                mala++;
             }
         });
 

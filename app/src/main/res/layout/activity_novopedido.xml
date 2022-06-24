@@ -83,6 +83,7 @@
                 android:elevation="12dp"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -178,6 +179,7 @@
                 android:elevation="12dp"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -274,6 +276,7 @@
                 android:clickable="true"
                 android:elevation="12dp"
                 android:focusable="true"
+                android:visibility="gone"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="10dp">
 
@@ -364,7 +367,6 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/PostCard4"
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -373,6 +375,7 @@
                 android:elevation="12dp"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
