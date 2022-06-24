@@ -74,7 +74,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Avançar"
+        android:text="Avancar"
         android:backgroundTint="@color/green"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
